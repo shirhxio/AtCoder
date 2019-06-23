@@ -19,5 +19,20 @@ namespace Template
         public static ModNum operator +(ModNum a, ModNum b) => a.X + b.X;
         public static ModNum operator -(ModNum a, ModNum b) => Mod + a.X - b.X;
         public static ModNum operator *(ModNum a, ModNum b) => a.X * b.X;
+        public static ModNum operator /(ModNum a, ModNum b) => a.X * Pow(b, Mod - 2);
+
+        public static ModNum Pow(ModNum baseNum, int exponent)
+        {
+            switch (exponent)
+            {
+                case 0:
+                    return 1;
+                case 1:
+                    return baseNum;
+                default:
+                    var pow = Pow(baseNum, exponent / 2);
+                    return (exponent % 2) == 0 ? pow * pow : pow * pow * baseNum;
+            }
+        }
     }
 }
