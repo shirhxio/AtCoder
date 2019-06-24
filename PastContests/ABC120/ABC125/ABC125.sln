@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BResale", "BResale\BResale.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGcdOnBlackboard", "CGcdOnBlackboard\CGcdOnBlackboard.csproj", "{7C24D4A5-55CE-4D0B-A291-D5069F255957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFlippingSigns", "DFlippingSigns\DFlippingSigns.csproj", "{2B3A2E42-4C88-4141-B1AF-AA38A3F53D0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{7C24D4A5-55CE-4D0B-A291-D5069F255957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C24D4A5-55CE-4D0B-A291-D5069F255957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C24D4A5-55CE-4D0B-A291-D5069F255957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3A2E42-4C88-4141-B1AF-AA38A3F53D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3A2E42-4C88-4141-B1AF-AA38A3F53D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3A2E42-4C88-4141-B1AF-AA38A3F53D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3A2E42-4C88-4141-B1AF-AA38A3F53D0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
