@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 
+// https://atcoder.jp/contests/abc125/tasks/abc125_c
 namespace CGcdOnBlackboard
 {
     class Program
