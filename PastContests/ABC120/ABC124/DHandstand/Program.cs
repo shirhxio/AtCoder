@@ -46,20 +46,28 @@ namespace DHandstand
             else
             {
                 // 直立している人のグループが操作回数より多いのであれば、連続する k 個の直立グループを反転させて最大をとる
-                for (var i = 0; i <= uprightGroups - k; i++)
+                var left = stateSummary[0].Item1 ? 1 : 0;
+                var right = left + 2 * (k - 1);
+                var sum = 0;
+                for (var i = left - 1; i <= right + 1; i++)
                 {
-                    var handstands = n;
-                    var uprightGroupCount = 0;
-                    foreach (var group in stateSummary)
-                    {
-                        // i - 1 番目直立グループから前の人数を総計から差し引く
-                        if (uprightGroupCount < i) handstands -= group.Item2;
-                        if (!group.Item1) uprightGroupCount++;
-                        // i + k 番目直立グループから後の人数を総計から差し引く
-                        if (i + k < uprightGroupCount) handstands -= group.Item2;
-                    }
+                    if (i < 0) continue;
+                    sum += stateSummary[i].Item2;
+                }
 
-                    if (maxHandstands < handstands) maxHandstands = handstands;
+                maxHandstands = sum;
+
+                // 尺取り法で最大値を算出していく
+                for (var i = 0; i < uprightGroups - k; i++)
+                {
+                    if (0 <= left - 1) sum -= stateSummary[left - 1].Item2;
+                    sum -= stateSummary[left].Item2;
+                    left += 2;
+                    right += 2;
+                    sum += stateSummary[right].Item2;
+                    if (right + 1 < stateSummary.Count) sum += stateSummary[right + 1].Item2;
+
+                    if (maxHandstands < sum) maxHandstands = sum;
                 }
             }
 
