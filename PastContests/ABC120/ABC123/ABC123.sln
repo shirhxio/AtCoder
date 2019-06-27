@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFiveAntennas", "AFiveAnten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFiveDishes", "BFiveDishes\BFiveDishes.csproj", "{C3C49242-734C-482C-A4AD-1C89ED78CB32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFiveTransportations", "CFiveTransportations\CFiveTransportations.csproj", "{9B5B4E0A-2063-4020-AB3A-9D1F0F91DD43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C3C49242-734C-482C-A4AD-1C89ED78CB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3C49242-734C-482C-A4AD-1C89ED78CB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3C49242-734C-482C-A4AD-1C89ED78CB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B5B4E0A-2063-4020-AB3A-9D1F0F91DD43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5B4E0A-2063-4020-AB3A-9D1F0F91DD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B5B4E0A-2063-4020-AB3A-9D1F0F91DD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5B4E0A-2063-4020-AB3A-9D1F0F91DD43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
