@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
+// https://atcoder.jp/contests/abc132/tasks/abc132_f
 namespace FSmallProducts
 {
     class Program
@@ -12,28 +13,37 @@ namespace FSmallProducts
             var inputs = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int n = inputs[0], k = inputs[1];
 
-            var dp0 = new ModNum[n + 1];
-            var dp1 = new ModNum[n + 1];
-
-            dp0[0] = 0;
-            for (var i = 1; i < n + 1; i++)
+            // ある数aに対して a * b <= n となる最大値bの一覧を作成
+            // for で n 回走査すると TLE のため,
+            // 双曲線の特徴を活かして x == n/x となる √n までの x , n/x で一覧を作る
+            List<int> divSummary = new List<int>();
+            for (var i = 1; i * i <= n; i++)
             {
-                dp0[i] = dp0[i - 1] + n / i;
+                divSummary.Add(i);
+                if (i * i != n) divSummary.Add(n / i);
+            }
+            divSummary.Sort();
+
+            var divCount = divSummary.Count;
+            ModNum[,] dp = new ModNum[k, divCount];
+
+            for (var i = 0; i < divCount; i++)
+            {
+                dp[0, i] = divSummary[i];
             }
 
-            for (var i = 3; i <= k; i++)
+            for (var i = 1; i < k; i++)
             {
-                var prevDp = i % 2 == 0 ? dp1 : dp0;
-                var curDp = i % 2 == 0 ? dp0 : dp1;
-                curDp[0] = 0;
-                for (var j = 1; j < n + 1; j++)
+                dp[i, 0] = dp[i - 1, divCount - 1];
+                for (var j = 1; j < divCount; j++)
                 {
-                    curDp[j] = curDp[j - 1] + prevDp[n / j];
+                    var overlap = divSummary[j] - divSummary[j - 1];
+                    dp[i, j] = dp[i, j - 1] + overlap * dp[i - 1, divCount - 1 - j];
                 }
             }
 
             // 解答の出力
-            Console.WriteLine(dp1[n].X);
+            Console.WriteLine(dp[k - 1, divCount - 1].X);
         }
     }
 
