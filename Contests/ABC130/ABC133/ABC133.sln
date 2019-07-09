@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A", "A\A.csproj", "{F056753E-84E3-4CEC-9EE6-E49F2F926098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGoodDistance", "BGoodDistance\BGoodDistance.csproj", "{9B54AB2A-A217-451D-A703-C2BF80878AB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRemainderMinimization2019", "CRemainderMinimization2019\CRemainderMinimization2019.csproj", "{182841B5-67C0-4F54-BDA3-49DF3D5E9B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRainFlowsIntoDams", "DRainFlowsIntoDams\DRainFlowsIntoDams.csproj", "{C21C0508-0978-498B-B4EC-E8272EE785EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EVirusTree2", "EVirusTree2\EVirusTree2.csproj", "{19C59972-4DAA-41FA-BFA5-09100D00F115}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F056753E-84E3-4CEC-9EE6-E49F2F926098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F056753E-84E3-4CEC-9EE6-E49F2F926098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F056753E-84E3-4CEC-9EE6-E49F2F926098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F056753E-84E3-4CEC-9EE6-E49F2F926098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B54AB2A-A217-451D-A703-C2BF80878AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B54AB2A-A217-451D-A703-C2BF80878AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B54AB2A-A217-451D-A703-C2BF80878AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B54AB2A-A217-451D-A703-C2BF80878AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182841B5-67C0-4F54-BDA3-49DF3D5E9B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182841B5-67C0-4F54-BDA3-49DF3D5E9B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182841B5-67C0-4F54-BDA3-49DF3D5E9B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182841B5-67C0-4F54-BDA3-49DF3D5E9B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C21C0508-0978-498B-B4EC-E8272EE785EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C21C0508-0978-498B-B4EC-E8272EE785EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C21C0508-0978-498B-B4EC-E8272EE785EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C21C0508-0978-498B-B4EC-E8272EE785EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C59972-4DAA-41FA-BFA5-09100D00F115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C59972-4DAA-41FA-BFA5-09100D00F115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C59972-4DAA-41FA-BFA5-09100D00F115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C59972-4DAA-41FA-BFA5-09100D00F115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
